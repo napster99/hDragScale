@@ -6,13 +6,15 @@ module.exports = {
     // 输出配置
     path: path.resolve(__dirname, "build"),
     filename: "index.js",
-    library: "HanderDragSacle",
-    libraryTarget: "umd",
+    library: {
+      // name: "HanderDragSacle",
+      type: "module",
+    },
   },
 
-  // experiments: {
-  //   outputModule: true,
-  // },
+  experiments: {
+    outputModule: true,
+  },
 
   // mode: "development",
   mode: "production",
