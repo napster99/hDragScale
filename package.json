@@ -1,0 +1,25 @@
+{
+  "name": "@tuya-fe/hDragScale",
+  "version": "0.0.1",
+  "description": "轻量级的拖动缩放库",
+  "files": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@farmfe/cli": "^0.5.8",
+    "@farmfe/core": "^0.13.21",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "dev": "farm start",
+    "start": "farm start",
+    "build": "farm build",
+    "webpack": "webpack",
+    "babel": "babel ./src/HanderDragSacle.js --out-file  ./build/index.js",
+    "preview": "farm preview"
+  }
+}
